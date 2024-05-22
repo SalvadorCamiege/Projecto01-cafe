@@ -1,0 +1,2682 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900&display=swap');
+ 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body{
+    color: #666666;
+    font-size: 14px;
+    font-weight: normal;
+    overflow-x: hidden !important;
+   
+}
+
+
+header{
+    background-color: black;
+    padding: 15px;
+    
+}
+
+.conteiner{
+     margin: 0px auto;
+     padding: 20px 20px;
+}
+
+.menu-icon img{
+  width: 30px;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+
+.nav-list{
+  justify-content: right;
+  display: flex;
+}
+
+.nav-list ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-itens a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  font-weight: 400px;
+  
+  
+}
+
+
+
+nav ul a:hover{
+    color: rgb(245, 124, 124);
+    transition: 2s;
+}
+
+ .menu-icon{
+    cursor: pointer;
+    font-size: 40px;
+     color: white;
+     display: none;
+     
+}
+
+.mobile-menu ul{
+    display: none;
+}
+
+
+
+.cor-hover{
+    color: rgb(245, 124, 124);
+}
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .slide{
+      margin: 70px;
+      padding: 0 100px;
+  }
+
+  .slide h2{
+      color: black;
+      font-size: 40px;
+      margin-bottom: 10px;
+      font-family:  "Roboto", sans-serif;
+}
+
+.slide h1{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family:  "Roboto", sans-serif;
+}
+
+.slide p{
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-family:  "Roboto", sans-serif;
+}
+
+.imagem{
+   background-position: right center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+  .content {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    padding: 20px;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    padding: 20px;
+  }
+
+  .btn{
+     background-color: black;
+     color: white;
+     padding: 10px;
+     margin-top: 30px 20px;
+     width: 150px;
+     text-align: center;
+     cursor: pointer;
+     display: inline-block;
+     transition: 0.15s;
+  }
+
+  .btn:hover{
+     background-color: rgb(245, 124, 124);
+     transition: 2s;
+  }
+
+  .Sobre .rosa{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+   }
+
+   .Sobre .rosa{
+    margin-top: 100px;
+       margin-bottom: 30px;
+    
+ }
+
+  .Sobre .Sobre-text{
+       width: 40%;
+       padding: 0px 30px;
+       
+}
+
+.Sobre .Sobre-text h2{
+     font-size: 50px;
+     color:  rgb(245, 124, 124);
+     margin-bottom: 15px;
+     font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+    font-size: 17px;
+    margin: 5px 0px 10px 0px;
+}
+
+.Sobre .sobre-img{
+      width: 45%;
+      
+      
+}
+
+.Sobre .sobre-img img{
+      width: 100%;
+  
+}
+
+
+.Galeria h2{
+    text-align: center;
+    font-size: 40px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    margin: 50px 0px 30px 0px;
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.Angola-imagem{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.Galeria .Galeria-itens{
+     margin: 15px;
+     width: calc(33.333% - 30px);
+     height: 350px;
+     text-align: center;
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative; 
+     overflow: hidden;
+     
+}
+
+.Galeria .Galeria-itens img{
+      width: 100%; 
+      height: 100%;
+      object-fit: cover;
+      transition: filter 0.3s ease;
+}
+
+.Galeria .Galeria-itens:hover img {
+    filter: brightness(70%); /* Reduz a luminosidade da imagem ao passar o mouse */
+}
+
+.Galeria .Galeria-itens::before {
+  content: ''; /* Unicode para o ícone de lupa */
+  font-size: 100px; /* Tamanho do ícone */
+  color: red; /* Cor do ícone */
+  position: absolute; /* Posicionamento absoluto em relação ao contêiner pai */
+  top: 50%; /* Posiciona o ícone verticalmente no meio */
+  left: 50%; /* Posiciona o ícone horizontalmente no meio */
+  transform: translate(-50%, -50%); /* Centraliza o ícone */
+  opacity: 0; /* Inicialmente oculta o ícone */
+  transition: opacity 0.3s ease; /* Efeito de transição para o ícone */
+}
+
+
+.Galeria .Galeria-itens:hover::before {
+  opacity: 1; /* Torna o ícone visível ao passar o mouse */
+}
+
+.Galeria .Galeria-itens:hover img {
+  filter: brightness(50%); /* Reduz a luminosidade da imagem ao passar o mouse */
+}
+
+.Galeria .Galeria-itens:not(:hover)::before {
+  opacity: 0; /* Oculta o ícone quando o mouse não está sobre a imagem */
+}
+
+.Galeria .Galeria-itens:hover{
+     background-color: blue;
+     margin-top: -5px;
+}
+
+.btn-centro{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin-top: 30px 20px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.15s;
+    margin: auto;
+}
+
+.btn-centro:hover{
+  background-color: rgb(245, 124, 124);
+  transition: 2s;
+}
+
+.Serviços{
+    margin-top: 20px;
+    
+   
+    
+}
+
+.Serviços h2{
+     text-align: center;
+     font-size: 40px;
+     color: white;
+     font-family:  "Roboto", sans-serif;
+     margin-bottom: 20px;
+}
+
+.Serviços p{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family:  "Roboto", sans-serif;
+  margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+.Serviços .cards-itens{
+     background-color: rgb(245, 124, 124);
+     margin: 15px;
+     text-align: center;
+     width: 360px;
+     height: 300px;
+     transition: 3s;
+     display: flex;
+     flex-direction: column; /* Definir a direção como coluna */
+     align-items: center;
+     position: relative;
+     transition: transform 0.5s;
+    
+     
+}
+
+.Serviços .cards-itens:hover{
+  background-color: white;
+  transform: scale(1.1);
+  
+}
+
+.Serviços .cards-itens:hover .nome-user,.Serviços 
+.cards-itens:hover
+ .depoimento, 
+.depoimento .cards-itens:hover{
+  color: black;
+  transition: 2s;
+}
+
+.Serviços .cards-itens button {
+  position: absolute; /* Tornando os botões absolutos para posicionamento */
+  border: none;
+  margin-top: 150px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  bottom: 10px; /* Posicionando os botões abaixo do conteúdo */
+  opacity: 0; /* Tornando os botões inicialmente invisíveis */
+  transition: opacity 0.10s;
+}
+
+ 
+  .Serviços .cards-itens:hover button {
+    opacity: 1; /* Tornando os botões visíveis ao passar o mouse sobre os cartões */
+  
+}
+
+.Serviços .cards-itens img{
+      width: 70px;
+      margin: 15px auto;
+      display: block;
+      
+}
+
+.Serviços .cards-itens .nome-user{
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-size: 20px;
+  
+}
+
+.Serviços .cards-itens .depoimento{
+    font-size: 15px;
+    padding: 0px 15px;
+
+}
+
+.background-image01{
+    width: 100%;
+    float: left;
+    background-image: url('/imagens/services-bg.png');
+    background-attachment: fixed;
+    height: auto;
+    background-size: 100%;
+    padding: 95px 0px 95px 0px;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+}
+
+
+.testemunho{
+     width: 85%;
+     margin: auto;
+     
+}
+
+.teste h2{
+    font-size: 40px;  
+    color: rgb(245, 124, 124);
+}
+
+.teste p{  
+     margin-top: 17px;
+     font-size: 20px;
+}
+
+.Amado{
+    margin-top: 25px;
+    border: 3px solid rgb(245, 124, 124);
+    padding: 20px;
+    
+}
+
+.Amado .Amando-itens h2  {
+     color:  rgb(245, 124, 124);
+     margin-bottom: 15px;
+    
+}
+
+.Amado .Amando-itens p {
+    font-size: 20px;
+    text-align: justify;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.Amado .Amando-itens p:hover {
+    color:  rgb(245, 124, 124);
+    
+}
+
+.Bicho{
+    margin-top: 90px;
+  
+}
+
+.Bicho h2{
+    text-align: center;
+    margin: 10px 0px 60px 0px;
+    color: rgb(245, 124, 124);
+    font-size: 40px;
+    font-family:  "Roboto", sans-serif;
+}
+
+  
+
+
+.Bicho .camiege {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  height: 100%; /* Ajustado para ocupar toda a altura da tela */
+  padding: 10px 0px;
+}
+
+.Bicho  .Mapa {
+  width: 50%;
+  height: 100%;
+  /* Ajustado para ocupar toda a altura da div pai */
+}
+
+.Bicho .Formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.Bicho .Formulario input,
+.Bicho .Formulario textarea {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+  border: 1px solid #4f9cf9;
+  color: #212121;
+  font-weight: lighter;
+}
+
+.Bicho .Formulario textarea {
+  width: 80%;
+  padding: 20px;
+  
+}
+
+.footer{
+  background-color: black;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+
+.footer i{
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  margin: 13px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.footer i:hover{
+      background-color:  rgb(245, 124, 124);
+      transition: 2s;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    
+  
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-bar{
+     padding: 1.5rem 3rem;
+  }
+
+  .nav-itens{
+     display: none;
+  }
+
+  .menu-icon{
+     display: block;
+  }
+
+  .mobile-menu ul{
+     display: block;
+     width: 100%;
+     font-size: 20px;
+     flex-direction: column;
+     text-align: center;
+     background-color: black;
+     padding-bottom: 1rem;
+  }
+
+  .mobile-menu ul li a{
+      color: white;
+  }
+
+  .mobile-menu ul li a:hover{
+     color:  rgb(245, 124, 124);
+     transition: 2s;
+}
+
+  .mobile-menu .nav-itens{
+     display: block;
+     padding: 1rem 2rem;
+  
+  }
+
+  .open{
+     display: none;
+  }
+
+ 
+
+
+}
+
+@media(max-width:1000px)  {
+  .conteiner{
+    margin: 0px auto;
+    padding: 20px 20px;
+}
+
+.menu-icon img{
+ width: 30px;
+}
+
+.nav-bar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+}
+
+.nav-list{
+ justify-content: right;
+ display: flex;
+}
+
+.nav-list ul{
+ display: flex;
+ list-style-type: none;
+}
+
+.nav-itens a{
+ text-decoration: none;
+ font-size: 20px;
+ color: white;
+ padding: 5px;
+ font-weight: 400px;
+ 
+ 
+}
+
+
+
+ .carousel {
+      height: auto;
+  }
+
+  .slide {
+      padding: 10px;
+  }
+
+  .slide h2,
+  .slide h1,
+  .slide p {
+      width: 50%;
+  }
+
+  .slide h2{
+      font-size: 20px;
+    
+  }
+
+  .slide h1{
+      font-size: 30px;
+  }
+
+  .slide p{
+     font-size: 15px;
+     width: 40%;
+  }
+
+  .imagem{
+    background-position: center top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+ }
+
+.Sobre .rosa{
+    margin-bottom: 50px;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 50%;
+    padding: 90px 70px;
+  
+}
+
+.Sobre .sobre-img{
+    width: 35%;
+  
+}
+
+.btn-centro{
+   margin-bottom: 20px;
+   background-color: red;
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 30px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 15px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 5px 0px 10px 0px;
+}
+
+.Sobre .sobre-img{
+   width: 50%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 80%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 50%;
+  }
+
+  .Galeria .Galeria-itens {
+      width: calc(50% - 30px);
+  }
+
+
+ 
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  .contactos .Formulario input,
+  .contactos .Formulario textarea {
+      width: 90%;
+  }
+
+  .Formulario input{
+      width: 100%;
+      
+  }
+
+  
+}
+
+
+ 
+
+
+
+@media(max-width:800px){
+  
+  .conteiner{
+    margin: 0px auto;
+    padding: 10px 10px;
+}
+
+.menu-icon img{
+ width: 30px;
+}
+
+.nav-bar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+}
+
+.nav-list{
+ justify-content: right;
+ display: flex;
+}
+
+.nav-list ul{
+ display: flex;
+ list-style-type: none;
+}
+
+.nav-itens a{
+ text-decoration: none;
+ font-size: 20px;
+ color: white;
+ padding: 5px;
+ font-weight: 400px;
+ 
+ 
+}
+
+.slide{
+  margin: 100px;
+  padding: 0 0px;
+}
+  .slide h2{
+    font-size: 30px;
+}
+
+.slide h1{
+    font-size: 30px;
+}
+
+.slide p{
+   font-size: 17px;
+   width: 80%;
+  
+  
+}
+  
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+
+.Sobre .rosa{
+  margin-bottom: 30px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+ text-align: justify;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 80%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 80%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+@media(max-width:600px){
+  nav .logo img{
+    width: 300px;
+    
+}
+ 
+.conteiner{
+  margin: 0px auto;
+  padding: 10px 10px;
+}
+
+.menu-icon img{
+width: 30px;
+}
+
+.nav-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.nav-list{
+justify-content: right;
+display: flex;
+}
+
+.nav-list ul{
+display: flex;
+list-style-type: none;
+}
+
+.nav-itens a{
+text-decoration: none;
+font-size: 20px;
+color: white;
+padding: 5px;
+font-weight: 400px;
+
+
+}
+  .slide{
+    margin: 10px;
+    padding: 0 50px;
+}
+  .slide h2{
+    font-size: 15px;
+    
+}
+
+.slide h1{
+    font-size: 25px;
+    
+}
+
+.slide p{
+   font-size: 10px;
+   width: 100%;
+}
+
+.btn{
+    background-color: black;
+    width: 70px;
+    
+    
+}
+
+.slide{
+  margin: 100px;
+  padding: 0 0px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 17px;
+ width: 80%;
+
+
+}
+
+  
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}  
+
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+@media(max-width:550px){
+  nav .logo img{
+    width: 300px;
+    
+   
+}
+ 
+.conteiner{
+  margin: 0px auto;
+  padding: 5px 5px;
+}
+
+.menu-icon img{
+width: 30px;
+}
+
+.nav-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.nav-list{
+justify-content: right;
+display: flex;
+}
+
+.nav-list ul{
+display: flex;
+list-style-type: none;
+}
+
+.nav-itens a{
+text-decoration: none;
+font-size: 20px;
+color: white;
+padding: 5px;
+font-weight: 400px;
+
+
+}
+  
+.slide{
+  margin: 100px;
+  padding: 0 10px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 17px;
+ width: 80%;
+}
+
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+} 
+
+.btn{
+    background-color: black;
+    width: 100px;
+}
+
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+
+
+
+
+@media(max-width:500px){
+  nav .logo img{
+    width: 200px;
+   
+}
+ 
+.conteiner{
+  margin: 0px auto;
+  padding: 5px 5px;
+}
+
+.menu-icon img{
+width: 30px;
+}
+
+.nav-bar{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.nav-list{
+justify-content: right;
+display: flex;
+}
+
+.nav-list ul{
+display: flex;
+list-style-type: none;
+}
+
+.nav-itens a{
+text-decoration: none;
+font-size: 20px;
+color: white;
+padding: 5px;
+font-weight: 400px;
+
+
+}
+.slide{
+  margin: 70px;
+  padding: 0 0px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 17px;
+ width: 80%;
+
+
+}
+
+  
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+} 
+
+.btn{
+    background-color: black;
+    width: 100px;
+}
+
+  
+ 
+
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+@media(max-width:450px){
+  nav .logo img{
+    width: 200px;
+}
+ 
+
+.menu-icon img{
+    width: 30px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.nav-list{
+    justify-content: right;
+    display: flex;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-itens a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: 400px;
+
+
+}
+
+.slide{
+      margin: 50px;
+      padding: 0 10px;
+}
+
+.slide h2{
+     font-size: 30px;
+}
+
+.slide h1{
+     font-size: 30px;
+}
+
+.slide p{
+     font-size: 17px;
+     width: 80%;
+ 
+}
+
+.imagem{
+      background-position: right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 450px;
+} 
+
+
+.Sobre .rosa{
+      margin-bottom: 20px;
+      flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+    font-size: 50px;
+    color:  rgb(245, 124, 124);
+    margin-bottom: 20px;
+    font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+    font-size: 17px;
+    margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+@media(max-width:400px){
+  nav .logo img{
+    width: 150px;
+    
+}
+ 
+  nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+     color: white;
+     
+}
+
+nav .close-menu{
+    color: white;
+    font-size: 15px;
+   
+}
+
+.slide{
+  margin: 50px;
+  padding: 0 10px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 15px;
+ width: 80%;
+}
+
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+} 
+
+.btn{
+    background-color: black;
+    width: 100px;
+}
+
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+
+@media(max-width:350px){
+  nav .logo img{
+    width: 120px;
+    
+}
+ 
+  nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+     color: white;
+     
+}
+
+nav .close-menu{
+    color: white;
+    font-size: 15px;
+   
+}
+
+.slide{
+  margin: 40px;
+  padding: 0 10px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 14px;
+ width: 80%;
+}
+
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+} 
+
+.btn{
+    background-color: black;
+    width: 100px;
+}
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+@media(max-width:320px){
+  nav .logo img{
+    width: 120px;
+}
+ 
+  nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+     color: white;
+     
+}
+
+nav .close-menu{
+    color: white;
+    font-size: 15px;
+   
+}
+
+.slide{
+  margin: 30px;
+  padding: 0 10px;
+}
+
+.slide h2{
+  font-size: 30px;
+}
+
+.slide h1{
+  font-size: 30px;
+}
+
+.slide p{
+ font-size: 14px;
+ width: 90%;
+}
+
+.imagem{
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+} 
+
+.btn{
+    background-color: black;
+    width: 100px;
+}
+
+  
+
+
+.Sobre .rosa{
+  margin-bottom: 20px;
+  flex-direction: column;
+  
+
+}
+
+.Sobre .Sobre-text{
+    width: 80%;
+    padding: 80px 10px;
+   
+  
+}
+
+.Sobre .sobre-img{
+    width: 80%;
+    
+}
+
+
+.Sobre .Sobre-text h2{
+  font-size: 50px;
+  color:  rgb(245, 124, 124);
+  margin-bottom: 20px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.Sobre .Sobre-text p{
+ font-size: 17px;
+ margin: 3px 30px 10px 3px;
+}
+
+.Sobre .sobre-img{
+   width: 100%;
+
+}
+
+.Sobre .sobre-img img{
+   width: 100%;
+
+}
+
+ .Sobre .Sobre-text,
+  .Sobre .sobre-img {
+      width: 80%;
+  }
+
+  .Angola-imagem{
+    flex-direction: column;
+}
+
+  .Galeria .Galeria-itens {
+      width: calc(100% - 30px);
+  }
+
+  .Galeria h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:  "Roboto", sans-serif;
+    color: rgb(245, 124, 124);
+    
+}
+
+.Galeria p{
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family:  "Roboto", sans-serif;
+  
+}
+
+.cards{
+    flex-direction: column;
+  
+  
+}
+
+.Serviços .cards-itens{
+  background-color: rgb(245, 124, 124);
+  margin: 15px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  transition: 3s;
+  display: flex;
+  flex-direction: column; /* Definir a direção como coluna */
+  align-items: center;
+  position: relative;
+  transition: transform 0.5s;
+ 
+  
+}
+
+.background-image01{
+  width: 100%;
+  float: left;
+  background-image: url('/imagens/services-bg.png');
+   height: auto;
+   height: auto;
+   background-size: auto;
+  
+   
+}
+
+.contactos .background-image02 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+     height: 600px;
+    
+}
+
+ .Mapa  {
+    width: 100%; 
+    
+}
+
+.Bicho .Formulario {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Bicho .camiege,
+.Bicho .background-img3,
+.Bicho .Mapa {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 90%;
+  }
+
+
+
+  .btn-centro{
+     width: 20%;
+  }
+
+  .Bicho .camiege,
+  .Bicho,
+  .Bicho .Mapa {
+      width: 90%;
+  }
+
+  .Bicho .Formulario input,
+  .Bicho .Formulario textarea {
+      width: 100%;
+  }
+
+  .footer i {
+      margin: 13px auto;
+  }
+
+  .footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
